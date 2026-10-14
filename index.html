@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="no"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kunst | ArtYoMat | Oslo</title><meta name="description" content="Velkommen til ArtYoMat sitt brede utvalg av kurs innen helse, velvære og kunstneriske opplevelser. Utforsk også Nathalie Nilsens kunstverk."><meta property="og:title" content="Kunst | ArtYoMat | Oslo"><meta property="og:description" content="Velkommen til ArtYoMat sitt brede utvalg av kurs innen helse, velvære og kunstneriske opplevelser. Utforsk også Nathalie Nilsens kunstverk."><meta property="og:image" content="https://static.wixstatic.com/media/238640_60ab82404d5647f2bc811a78b518944b~mv2.jpg/v1/fill/w_1830,h_937,al_c/238640_60ab82404d5647f2bc811a78b518944b~mv2.jpg">
+<link rel="icon" href="https://static.wixstatic.com/media/238640_7b9b6880fbee4d828a2165d1b73acb23~mv2_d_2633_2632_s_4_2.png/v1/crop/x_54,y_54,w_2579,h_2578/fill/w_174,h_174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20aq.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><style>
+:root{--ink:#2B3442;--slate:#5E6B7C;--light:#8592A3;--btn:#4F6378;--btn-l:#9AAABB;--peach:#F6E4D6;--sand:#EEE8E1;--line:#DCDDE2;--lav:#BDB4D6;--rose:#E2C3B6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--slate);font-family:"Jost","Futura","Century Gothic",sans-serif;font-weight:300;font-size:1.12rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+h1,h2,h3{font-family:"Jost",sans-serif;font-weight:300;color:var(--ink);margin:0;line-height:1.15}
+.display{font-family:"Playfair Display",Georgia,serif;font-weight:700;letter-spacing:.06em;line-height:.95}
+.band{height:64px;background:linear-gradient(180deg,#F3DCCB,#F7EDE5)}
+/* header */
+.hdr{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;padding-top:.9rem;padding-bottom:.9rem}
+.brand{display:flex;align-items:center;gap:1rem;text-decoration:none;color:var(--ink)}
+.brand img{width:64px;height:64px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px #fff,0 4px 14px rgba(0,0,0,.08)}
+.brand span{font-size:1.6rem;font-weight:300}
+.nav{display:flex}.nav a{text-decoration:none;color:var(--ink);font-size:1.12rem;padding:.2rem 1.1rem;border-left:1.5px solid var(--ink);line-height:1.2}
+.nav a:first-child{border-left:0}.nav a.on{color:var(--light)}.nav a:hover{color:var(--light)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;font-size:1.2rem;color:var(--ink)}
+@media (max-width:860px){.nav{display:none}.burger{display:block}.nav.open{display:flex;flex-direction:column;position:fixed;inset:96px 0 0;background:#fff;padding:1rem 1.5rem}.nav.open a{border:0;border-bottom:1px solid var(--line);padding:1rem 0;font-size:1.4rem}}
+section{padding:5.5rem 0}
+@media (max-width:760px){section{padding:4rem 0}}
+.btn{display:inline-block;background:var(--btn);color:#fff;text-decoration:none;padding:.85rem 1.6rem;font-weight:400;font-size:1.05rem;transition:background .25s}
+.btn:hover{background:#3E5064}.btn.l{background:var(--btn-l)}.btn.l:hover{background:#8798AB}
+/* home: artist */
+.artist{display:grid;grid-template-columns:.8fr 1.2fr;gap:3.6rem;align-items:start}
+@media (max-width:900px){.artist{grid-template-columns:1fr;gap:2rem}}
+.artist .pic{background:#F3EEE9;min-height:420px}
+.artist .pic img{width:100%;height:auto}
+.artist h1{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--light);margin-bottom:1.2rem}
+.artist p{margin:0 0 1rem}
+.artist p.dark{color:var(--ink)}
+.poem{margin-top:1.6rem;color:var(--ink)}
+/* titles like the original */
+.ttl{display:flex;flex-direction:column;margin-bottom:2.6rem}
+.ttl .a{font-size:clamp(3.6rem,8vw,6.4rem);color:var(--lav)}
+.ttl .b{font-size:clamp(3.6rem,8vw,6.4rem);color:var(--rose);margin-top:-.15em}
+.ttl.galt .a{font-size:clamp(2.6rem,5vw,4.2rem);color:#9C9C9C;letter-spacing:.14em}
+.ttl.galt .b{color:#9C9C9C;letter-spacing:.08em}
+.thin{font-size:clamp(2.6rem,5.4vw,4.6rem);font-weight:300;color:var(--slate);line-height:1.1}
+/* shop grid */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem 1.6rem}
+@media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.grid{grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem}}
+.prod{text-decoration:none;color:inherit;display:block}
+.prod .im{position:relative;aspect-ratio:1;overflow:hidden;background:linear-gradient(160deg,#F4E9F1,#E3ECF5)}
+.prod .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.prod:hover .im img{transform:scale(1.04)}
+.prod .tag{position:absolute;left:0;top:0;background:rgba(94,107,124,.78);color:#fff;font-size:.95rem;padding:.2rem .9rem}
+.prod .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:1.3rem;color:#A7A0BE;text-align:center;padding:1rem}
+.prod .nm{margin-top:.9rem;color:var(--ink);font-size:1.15rem}
+.prod .pr{color:var(--slate)}
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin:-1rem 0 2.4rem}
+.filters button{font:inherit;font-size:1rem;background:#fff;border:1px solid var(--line);color:var(--slate);padding:.45rem 1rem;cursor:pointer}
+.filters button.on{background:var(--btn);color:#fff;border-color:var(--btn)}
+/* work detail (shop) */
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;padding:2.6rem 0;border-top:1px solid var(--line)}
+@media (max-width:900px){.detail{grid-template-columns:1fr}}
+.detail h3{font-size:2.2rem;color:var(--ink)}
+.detail .meta{color:var(--light);margin:.4rem 0 1rem}
+.detail .price{font-size:1.5rem;color:var(--ink);margin:1rem 0 1.2rem}
+/* video */
+.vids{display:grid;gap:3rem;max-width:780px}
+.vid button{all:unset;cursor:pointer;display:block;position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.vid button img{width:100%;height:100%;object-fit:cover;opacity:.9}
+.vid button::after{content:"";position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:#E62117 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M9 7l8 5-8 5z' fill='white'/></svg>") center/26px no-repeat}
+.vid iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.vid b{display:block;margin-top:.8rem;color:var(--ink);font-weight:400}
+/* gallery */
+.gal{display:grid;grid-template-columns:.8fr 2fr 1fr;gap:1rem;align-items:stretch}
+@media (max-width:900px){.gal{grid-template-columns:1fr 1fr}.gal>*:nth-child(2){grid-column:span 2;order:-1}}
+.gal .g{background:#F3EEE9;min-height:320px;overflow:hidden}
+.gal .g img{width:100%;height:100%;object-fit:cover}
+/* teambuilding */
+.tb{background:linear-gradient(180deg,#F3DCCB 0,#F7EDE5 140px,var(--sand) 140px)}
+.intro{background:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch}
+@media (max-width:900px){.intro{grid-template-columns:1fr}}
+.intro .txt{padding:3rem clamp(1.5rem,4vw,3.5rem)}
+.intro .txt h1{font-size:clamp(3rem,6vw,5rem);color:var(--light);font-weight:300;margin-bottom:2rem}
+.intro .txt p{color:var(--ink)}
+.intro .pic{background:#DDD;min-height:420px;overflow:hidden}.intro .pic img{width:100%;height:100%;object-fit:cover}
+.soc{display:flex;gap:1rem;margin-top:1.4rem;flex-wrap:wrap}.soc a{color:var(--btn);font-weight:400}
+.svc{background:#fff;padding:2rem;margin-top:2.4rem}
+.card{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-bottom:2rem;background:#fff}
+@media (max-width:760px){.card{grid-template-columns:1fr}}
+.card .im{min-height:300px;background:linear-gradient(160deg,#E9EEF3,#F3EBE4);overflow:hidden}.card .im img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:2.6rem 3rem;display:flex;flex-direction:column;justify-content:center}
+@media (max-width:760px){.card .tx{padding:1.8rem}}
+.card h3{font-size:clamp(1.6rem,2.6vw,2.1rem);color:var(--ink);padding-bottom:1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.4rem}
+.card .info{color:var(--slate);margin:0 0 .4rem}
+.card .btn{align-self:flex-start;margin-top:1.2rem}
+.offer{columns:2;column-gap:3rem;margin-top:2.6rem;color:var(--ink)}
+@media (max-width:760px){.offer{columns:1}}
+.offer div{break-inside:avoid;margin-bottom:1.8rem}.offer b{display:block;font-weight:500;color:var(--ink);font-size:1.2rem;margin-bottom:.3rem}
+/* contact */
+.contact{background:var(--sand);text-align:center}
+.contact h2{font-size:clamp(2.4rem,5vw,3.8rem);color:var(--light)}
+.contact p{color:var(--ink)}
+.contact .acts{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+footer{background:linear-gradient(180deg,#F7EDE5,#F3DCCB);color:var(--ink);padding:2.4rem 0;font-size:1rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+</style></head><body>
+<div class="band"></div><header class="hdr"><div class="wrap"><a class="brand" href="index.html"><img src="https://static.wixstatic.com/media/238640_7b9b6880fbee4d828a2165d1b73acb23~mv2_d_2633_2632_s_4_2.png/v1/crop/x_54,y_54,w_2579,h_2578/fill/w_174,h_174,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20aq.png" alt="Art Yo Mat logo"><span>Art Yo Mat</span></a><nav class="nav" id="nav"><a href="index.html" class=on>Hjem</a><a href="rampekunst.html">Rampekunst</a><a href="teambuilding.html">Teambuilding</a><a href="butikk.html">Butikk</a><a href="index.html#kontakt">Kontakt</a></nav><button class="burger" id="burger" aria-label="Meny">☰</button></div></header><main>
+<section><div class="wrap artist">
+ <div class="pic"><img src="https://static.wixstatic.com/media/238640_4da73772dd6e4d519ade8365640c26a4~mv2.avif/v1/fill/w_382,h_645,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/238640_4da73772dd6e4d519ade8365640c26a4~mv2.avif" alt="Kunstner Nathalie Nilsen" onerror="this.style.visibility=&quot;hidden&quot;"></div>
+ <div><h1>Kunstner — Nathalie Nilsen (f. 1983)</h1>
+  <p>Nathalie Nilsen arbeider fra et sted der kropp, sansning og tilstedeværelse leder prosessen. Med lukkede øyne lar hun bevegelse og rytme styre uttrykket — som en fysisk dialog mellom det indre og lerretet.</p>
+  <p>Verkene hennes utforsker sårbarhet, dybde og det som oppstår i øyeblikket før tanken tar over. Hvert arbeid bærer spor av en prosess der tiden midlertidig oppheves, og erfaring får feste seg som form.</p>
+  <p>Hun arbeider med akryl, kritt, kull, oljepastell, fosfor og bladgull. Materialene brukes intuitivt og lagvis, der kontraster mellom det rå og det presise skaper spenning og bevegelse i uttrykket.</p>
+  <p class="dark">Bak praksisen ligger en solid håndverksmessig forankring. Nilsen har over ti års erfaring som brudekjoledesigner, hvor presisjon, materialforståelse og detaljarbeid var sentralt. I tillegg har hun femten års erfaring som profesjonell kokk ved noen av Norges ledende restauranter, med fokus på helhetlige opplevelser som aktiverer flere sanser samtidig.</p>
+  <p class="dark">Denne bakgrunnen gir arbeidene hennes en sjelden kombinasjon av intuitiv frihet og teknisk kontroll. Nilsen er oppvokst i en kunstnerfamilie gjennom fire generasjoner, og utviklet tidlig en naturlig tilknytning til det visuelle språket.</p>
+  <p class="dark">Hun fullførte sin formelle kunstutdanning ved Prosjektskolen i Oslo i 2022. I dag er hennes praksis fullt og helt viet billedkunst og musikk, hvor hun viderefører en utforskning av det sanselige, det umiddelbare og det ekte.</p>
+  <p class="poem">Til å oppdage det skjøre, det kraftfulle og det vakre i samme bevegelse.<br>Og til, om så bare for et øyeblikk, å senke tempoet.<br>Hennes største verk begynner alltid med lukkede øyne —<br>uten forventning, uten dom.<br>Med en åpenhet for det som vil tre frem.</p>
+ </div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+ <div class="ttl display"><span class="a">Art</span><span class="b">Shop</span></div>
+ <div class="grid"><a class="prod" data-c="print" href="mailto:post@artyomat.no?subject=Interessert%20i%201936%20Skritt,%20print"><div class="im"><span class="ph">1936 Skritt, print</span><span class="tag">Prints</span></div><div class="nm">1936 Skritt, print</div><div class="pr">1 900 kr</div></a><a class="prod" data-c="annet" href="mailto:post@artyomat.no?subject=Interessert%20i%20Discovifte"><div class="im"><span class="ph">Discovifte</span><span class="tag">Lages på bestilling</span></div><div class="nm">Discovifte</div><div class="pr">250 kr</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%20Eventyr"><div class="im"><span class="ph">Eventyr</span></div><div class="nm">Eventyr</div><div class="pr">4 500 kr</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%20Vår"><div class="im"><span class="ph">Vår</span></div><div class="nm">Vår</div><div class="pr">Ikke på lager</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%20Dag"><div class="im"><img src="https://static.wixstatic.com/media/238640_0bbfd2138b984b16830bac99eca4e31c~mv2.jpg/v1/fill/w_980,h_703,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/238640_0bbfd2138b984b16830bac99eca4e31c~mv2.jpg" alt="Dag" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"><span class="tag">The Thief, Oslo</span></div><div class="nm">Dag</div><div class="pr">70 000 kr</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%20Morning%20Beat"><div class="im"><img src="https://static.wixstatic.com/media/238640_961420a79ac14ca1bc1a0ef603dc2230~mv2.jpg/v1/fill/w_980,h_1092,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/238640_961420a79ac14ca1bc1a0ef603dc2230~mv2.jpg" alt="Morning Beat" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"><span class="tag">Torggata 34</span></div><div class="nm">Morning Beat</div><div class="pr">60 000 kr</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%201936%20Skritt"><div class="im"><span class="ph">1936 Skritt</span><span class="tag">The Thief, Oslo</span></div><div class="nm">1936 Skritt</div><div class="pr">11 000 kr</div></a><a class="prod" data-c="maleri" href="mailto:post@artyomat.no?subject=Interessert%20i%20Noen%20vet"><div class="im"><img src="https://static.wixstatic.com/media/238640_f39797707a4b48de824525bebdf91042~mv2.jpg/v1/fill/w_491,h_292,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/238640_f39797707a4b48de824525bebdf91042~mv2.jpg" alt="Noen vet" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"><span class="tag">Maleri</span></div><div class="nm">Noen vet</div><div class="pr">28 000 kr</div></a></div>
+ <p style="margin-top:2.4rem"><a class="btn" href="butikk.html">Se hele butikken</a></p>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+ <p class="thin">Rampekunst<br>Live art performance</p>
+ <div class="vids" style="margin-top:2.4rem"><div class="vid"><button type="button" data-id="AfRJqZqsHnY" aria-label="Spill av Live art performance"><img src="https://i.ytimg.com/vi/AfRJqZqsHnY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"></button><b>Live art performance</b></div><div class="vid"><button type="button" data-id="gj4Cs75R5RA" aria-label="Spill av «Somebody knows»"><img src="https://i.ytimg.com/vi/gj4Cs75R5RA/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"></button><b>«Somebody knows»</b></div><div class="vid"><button type="button" data-id="2GUa2ufm0I4" aria-label="Spill av Rampekunst på Gøya-festivalen"><img src="https://i.ytimg.com/vi/2GUa2ufm0I4/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility=&quot;hidden&quot;"></button><b>Rampekunst på Gøya-festivalen</b></div></div>
+</div></section>
+<section class="contact" id="kontakt"><div class="wrap"><h2>Kontakt</h2><p>Nathalie Nilsen · <a href="tel:+4740526997">+47 405 26 997</a> · <a href="mailto:post@artyomat.no">post@artyomat.no</a></p>
+<div class="acts"><a class="btn" href="mailto:post@artyomat.no">Send e-post</a><a class="btn l" href="tel:+4740526997">Ring Nathalie</a></div>
+<div class="soc" style="justify-content:center"><a href="https://www.instagram.com/artyomat/">Instagram</a><a href="https://www.instagram.com/rampekunst/">Rampekunst på Instagram</a><a href="https://www.facebook.com/123pust">Facebook</a><a href="https://www.youtube.com/@artyomat">YouTube</a><a href="https://soundcloud.com/nathalie-nilsen-491240547">SoundCloud</a><a href="https://no.linkedin.com/in/nathalie-nilsen-12094a88">LinkedIn</a></div></div></section></main><footer><div class="wrap"><span>© <span id="yr"></span> Art Yo Mat AS · Org.nr. 922 899 592 · Oslo</span><span><a href="salgsvilkar.html">Salgsvilkår</a></span></div></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();var b=document.getElementById('burger'),n=document.getElementById('nav');b.onclick=function(){n.classList.toggle('open')};
+document.querySelectorAll('.vid button').forEach(function(x){x.onclick=function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+x.dataset.id+'?autoplay=1';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;x.replaceWith(f)}});
+document.querySelectorAll('.filters button').forEach(function(btn){btn.onclick=function(){document.querySelectorAll('.filters button').forEach(function(o){o.classList.toggle('on',o===btn)});var c=btn.dataset.c;document.querySelectorAll('.grid .prod').forEach(function(p){p.style.display=(c==='alle'||p.dataset.c===c)?'':'none'})}});
+</script></body></html>
